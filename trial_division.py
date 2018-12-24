@@ -7,7 +7,7 @@ def is_prime(n: int) -> bool:
         return n > 1
     elif n % 2 == 0 or n % 3 == 0:
         return False
-    for i in range(5, int(math.sqrt(n))):
+    for i in range(5, round(math.sqrt(n))):
         if n % i == 0 or n % (i + 2) == 0:
             return False
         i += 6
